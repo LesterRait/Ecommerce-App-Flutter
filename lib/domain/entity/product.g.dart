@@ -10,7 +10,7 @@ Product _$ProductFromJson(Map<String, dynamic> json) => Product(
       id: json['id'] as int,
       name: json['name'] as String,
       description: json['description'] as String,
-      price: json['price'] as String,
+      price: (json['price'] as String),
       images: (json['images'] as List<dynamic>)
           .map((e) => Images.fromJson(e as Map<String, dynamic>))
           .toList(),

@@ -2,7 +2,7 @@
 // Add your keys and url
 
 class Configuration {
-  String key = 'key';
-  String secret = 'key';
+  String key = 'KEY';
+  String secret = 'KEY';
   String url = 'https://example.com/';
 }

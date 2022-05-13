@@ -1,7 +1,8 @@
-import 'package:ecommerce/ui/widgets/category/category_list.dart';
-import 'package:ecommerce/ui/widgets/product/product_list.dart';
-import 'package:ecommerce/ui/widgets/search.dart';
+import 'package:ecommerce/ui/widgets/category/category.dart';
 import 'package:flutter/material.dart';
+import 'package:ecommerce/ui/widgets/search.dart';
+
+import '../widgets/product/product_list.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -9,24 +10,15 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.symmetric(
-          horizontal: 18.0,
-        ),
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.symmetric(horizontal: 18.0),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: const [
             SearchWidget(),
-            SizedBox(
-              height: 110,
-              child: CategoryListWidget(),
-            ),
-            Expanded(
-              child: SizedBox(
-                height: double.infinity,
-                child: ProductListWidget(),
-              ),
-            ),
+            CategoryListWidget(),
+            SizedBox(height: 20),
+            ProductListWidget(),
           ],
         ),
       ),

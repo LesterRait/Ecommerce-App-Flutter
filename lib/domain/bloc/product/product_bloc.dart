@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
-import 'package:ecommerce/domain/entity/product.dart';
-import 'package:ecommerce/domain/repository/product_repository.dart';
+import 'package:sonoffkz/domain/entity/product.dart';
+import 'package:sonoffkz/domain/repository/product_repository.dart';
 import 'package:meta/meta.dart';
 
 part 'product_event.dart';

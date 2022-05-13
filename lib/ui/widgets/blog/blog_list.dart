@@ -1,5 +1,5 @@
-import 'package:ecommerce/domain/bloc/blog_bloc.dart';
-import 'package:ecommerce/ui/screens/blog_detail.dart';
+import 'package:ecommerce/domain/bloc/blog/blog_bloc.dart';
+import 'package:ecommerce/ui/screens/detail/blog_detail.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';

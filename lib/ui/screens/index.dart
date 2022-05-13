@@ -1,4 +1,11 @@
 export 'account.dart';
+export 'auth.dart';
+export 'detail/blog_detail.dart';
+export 'blog.dart';
 export 'cart.dart';
 export 'category.dart';
+export 'favorite.dart';
 export 'home.dart';
+export 'main.dart';
+export 'privacy_policy.dart';
+export 'registration.dart';

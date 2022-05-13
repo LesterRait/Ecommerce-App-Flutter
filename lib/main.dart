@@ -1,16 +1,13 @@
-import 'package:ecommerce/domain/bloc/blog_bloc.dart';
-import 'package:ecommerce/domain/bloc/product_bloc.dart';
-import 'package:ecommerce/domain/repository/blog_repository.dart';
-import 'package:ecommerce/domain/repository/product_repository.dart';
-import 'package:ecommerce/ui/screens/auth.dart';
-import 'package:ecommerce/ui/screens/blog.dart';
-import 'package:ecommerce/ui/screens/cart.dart';
-import 'package:ecommerce/ui/screens/favorite.dart';
-import 'package:ecommerce/ui/screens/main.dart';
-import 'package:ecommerce/ui/screens/privacy_policy.dart';
-import 'package:ecommerce/ui/screens/registration.dart';
+import 'package:sonoffkz/domain/bloc/blog/blog_bloc.dart';
+import 'package:sonoffkz/domain/bloc/product/product_bloc.dart';
+import 'package:sonoffkz/domain/repository/blog_repository.dart';
+import 'package:sonoffkz/domain/repository/product_repository.dart';
+import 'package:sonoffkz/ui/screens/index.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:sonoffkz/ui/screens/notification.dart';
+import 'package:sonoffkz/ui/screens/order.dart';
+import 'package:sonoffkz/ui/screens/orders_history.dart';
 
 void main() {
   runApp(MyApp());
@@ -34,7 +31,7 @@ class MyApp extends StatelessWidget {
         )
       ],
       child: MaterialApp(
-        title: 'Ecommerce App',
+        title: 'sonoffkz App',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
           appBarTheme: const AppBarTheme(
@@ -55,11 +52,15 @@ class MyApp extends StatelessWidget {
         routes: {
           '/': (context) => const MainScreen(),
           '/blog': (context) => const BlogScreen(),
+          '/order': (context) => const OrderScreen(),
+          // '/product_detail': (context) => const ProductDetailScreen(),
           '/auth': (context) => const AuthScreen(),
           '/registration': (context) => const RegistrationScreen(),
           '/favorite': (context) => const FavoriteScreen(),
           '/cart': (context) => const CartScreen(),
+          '/notification': (context) => const NotificationScreen(),
           '/privacy_policy': (context) => const PrivacyPolicyScreen(),
+          '/order_history': (context) => const OrderHistoryScreen(),
         },
         initialRoute: '/',
       ),

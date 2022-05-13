@@ -12,7 +12,6 @@ class RegistrationScreen extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 18.0),
         child: Column(
-          // mainAxisSize: MainAxisSize.max,
           children: [
             const Padding(
               padding: EdgeInsets.symmetric(vertical: 28.0),

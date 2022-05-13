@@ -1,4 +1,3 @@
-import 'package:ecommerce/ui/widgets/search.dart';
 import 'package:flutter/material.dart';
 
 class CategoryScreen extends StatelessWidget {
@@ -7,10 +6,21 @@ class CategoryScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: const [
-          SearchWidget(),
-        ],
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 18.0),
+        child: Column(
+          children: [
+            // const SearchWidget(),
+            SizedBox(
+              width: MediaQuery.of(context).size.width,
+              height: 150,
+              child: const Card(
+                color: Colors.black,
+                child: Text('sonoff.kz'),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

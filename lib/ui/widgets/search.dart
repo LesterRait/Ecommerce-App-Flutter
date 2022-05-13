@@ -1,5 +1,4 @@
-import 'package:ecommerce/domain/bloc/product_bloc.dart';
-import 'package:ecommerce/domain/repository/product_repository.dart';
+import 'package:ecommerce/domain/bloc/product/product_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

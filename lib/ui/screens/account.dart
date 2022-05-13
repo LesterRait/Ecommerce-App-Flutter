@@ -55,7 +55,9 @@ class AccountScreen extends StatelessWidget {
             SwitchListTile(
               secondary: const Icon(Icons.notifications_active_outlined),
               title: const Text('Уведомления'),
-              onChanged: (bool value) {},
+              onChanged: (bool value) {
+                Navigator.pushNamed(context, '/notification');
+              },
               value: _push,
             ),
             const Padding(
@@ -78,7 +80,9 @@ class AccountScreen extends StatelessWidget {
               leading: const Icon(Icons.my_library_books_outlined),
               trailing: const Icon(Icons.arrow_right),
               title: const Text('История заказов'),
-              onTap: () {},
+              onTap: () {
+                Navigator.pushNamed(context, '/order_history');
+              },
             ),
           ],
         ),

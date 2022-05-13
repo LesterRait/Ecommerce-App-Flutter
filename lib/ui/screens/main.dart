@@ -1,4 +1,3 @@
-import 'package:ecommerce/domain/repository/blog_repository.dart';
 import 'package:ecommerce/ui/screens/index.dart';
 import 'package:ecommerce/ui/widgets/drawer/drawer.dart';
 import 'package:flutter/material.dart';
@@ -29,7 +28,6 @@ class _MainScreenState extends State<MainScreen> {
 
   @override
   Widget build(BuildContext context) {
-    BlogProvider().getBlog();
     return Scaffold(
       appBar: AppBar(
         title: const Text('Sonoff.kz'),
