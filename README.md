@@ -17,8 +17,8 @@
 
 #### Json Serializable
 
--   webview_flutter
--   build_runner:
+-   json_annotation
+-   build_runner
 -   json_serializable
 
 #### Data Formater
@@ -28,5 +28,9 @@
 #### Http Request
 
 -   http
+
+#### WebView
+
+-   webview_flutter
 
 =========================
